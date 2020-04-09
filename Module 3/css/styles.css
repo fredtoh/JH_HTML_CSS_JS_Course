@@ -1,0 +1,145 @@
+/* Custom Fonts */
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Farro";
+    src: url("../fonts/Farro-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* General Settings */
+body {
+    color: black;
+    background-color: white;
+    font: 14px 'Farro', san-serif;
+}
+h1 {
+    color: solid black;
+}
+h2, h3 {
+    padding: 10px;
+    text-shadow: 1px 1px 2px #222;
+    color: solid black;
+}
+section {
+    border: none;
+    margin: 50px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color: #DDD;
+    color: #000;
+}
+section > div > p {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+/**HEADER**/
+#header-nav {
+    background-color: #AAA;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 20px;
+    margin: 0;
+    height: 90px;
+}
+.navbar-brand h1 { /* Company name */
+    color: #000;
+    font: bold 2em 'Lobster', cursive;
+    text-shadow: 1px 1px 2px #222;
+    line-height: 0.25;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+/* If visible-xs does not work, use this:
+    @media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+    #collapsable-nav {
+        display: none;
+    }
+} 
+*/
+
+.navbar-toggle:focus {
+    outline: 0;
+}
+.navbar-toggle {
+/*     position: relative; */
+/*     float: right; */
+    padding: 10px 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+/* Override Bootstrap settings*/
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-header button.navbar-toggle {
+    border: 2px solid #000;
+} /* Can't override button border color. */
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+} /* No visible effect if turned off. */
+
+/* Use this with Bootstrap 4 to create the button icon.
+.navbar-header .navbar-toggler-icon {
+    border: 1px solid #777;
+}
+*/
+
+/* Override Bootstrap settings*/
+#collapsable-nav{
+    padding: 0;
+}
+
+#nav-list {
+    background-color: #DDD;
+    margin: 0;
+    padding: 0;
+}
+#nav-list li{
+    border-top: 1px solid #777;
+}
+#nav-list a {
+    color: #000;
+    font-size: 1.8em;
+}
+#nav-list a:hover {
+    background-color: #00AA66;
+    text-decoration: none;
+}
+
+/* #box1 {
+    background-color: #ffaaaa;
+    color: #000000;
+}
+  
+#box2 {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+  
+#box3 {
+    background-color: #ffe39b;
+    color: #000000;
+} */
